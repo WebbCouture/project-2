@@ -12,15 +12,27 @@ body {
     padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #116706ff;
+h1, h3, h4, h5, h6 {
+    color: #BFD187ff;
 }
 
-.press-start-2p-regular {
-    font-family: "Press Start 2P", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }
+h2 {
+    color: rgb(29, 58, 78);
+} 
+
+.button {
+    color: #BFD187ff;
+    background-color: #116706ff;
+    padding: 1.25rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+    box-shadow: 0.3125rem 0.625rem #202020;
+    margin-top: 1.875rem;
+}
 
 /* questions*/
 #cover-text-1 {
@@ -35,8 +47,8 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     border-radius: 20px;
     max-width: 90%;  
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 #cover-text-2 {
     /* Final rgba value sets the opacity to semi-transparent */
@@ -50,8 +62,8 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     border-radius: 20px;
     max-width: 90%;  
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 #cover-text-3 {
@@ -66,13 +78,13 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     border-radius: 20px;
     max-width: 90%;  
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
   
 /*Header*/
 header {
-    background-color: #BFD187ff;
+    background-color: #406A89ff;
     padding: 0.1rem;
     text-align: auto;
 }
