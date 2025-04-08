@@ -1,0 +1,41 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap');
+
+/* General styles */
+body {
+    text-align: center;
+    font-family: "Freckle Face", system-ui;
+    background-image: url('../images/four-leaf-clover-mini.jpg'); 
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #116706ff;
+}
+
+.press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+/*Header*/
+header {
+    background-color: #BFD187ff;
+    padding: 0.1rem;
+    text-align: auto;
+}
+
+/*Footer*/
+footer {
+    background-color: #406A89ff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
