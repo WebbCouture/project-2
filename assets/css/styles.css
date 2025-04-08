@@ -32,11 +32,11 @@ h1, h2, h3, h4, h5, h6 {
     background-color: rgba(172, 204, 100, 0.7);
     color: #ffffff;
     padding: 1rem;
-    text-align: left;
+    text-align: center;
     border-radius: 20px;
     max-width: 90%;  
     margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 #cover-text-2 {
     /* Final rgba value sets the opacity to semi-transparent */
@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: rgba(172, 204, 100, 0.7);
     color: #ffffff;
     padding: 1rem;
-    text-align: right;
+    text-align: center;
     border-radius: 20px;
     max-width: 90%;  
     margin-top: 4rem;
