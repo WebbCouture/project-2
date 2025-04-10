@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap');
 /* General styles */
 body {
-    padding-top: 50px;  /* Space for fixed header */
+    padding-top: 100px; 
     text-align: center;
     font-family: "Freckle Face", system-ui;
     background-image: url('../images/fortnight.jpg');
@@ -35,6 +35,9 @@ h1{
     box-shadow: 0.2rem 0.3rem #202020;
     margin-top: 1.875rem;
 }
+.image {
+    margin-top: 5rem;
+}
 /* Questions section: cover texts */
 #cover-text-1,
 #cover-text-2,
@@ -56,7 +59,7 @@ h1{
 /* Header */
 header {
     background-color: rgb(35, 4, 49);
-    padding: 1 1rem;
+    padding:0 1rem;
     height: 100%         /* Explicit header height */
     line-height: 60px;    /* Vertically center header text */
     position: fixed;       /* Fix header at the top */
@@ -81,7 +84,7 @@ footer {
 /* Media query: small phones (iPhone 5 and up) */
 @media screen and (max-width: 374px) {
     header {
-        padding: 0 0.5rem;
+        padding: 0 0.25rem;
     }
     #logo {
         font-size: 1.8rem;
