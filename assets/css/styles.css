@@ -1,25 +1,23 @@
-/* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap');
-
 /* General styles */
 body {
-    text-align: center;
+    padding-top: 50px;  /* Space for fixed header */
     font-family: "Freckle Face", system-ui;
-    background-image: url('../images/four-leaf-clover-mini.jpg'); 
-    background-size: cover;
-    background-position: position;
+    background-image: url('../images/four-leaf-clover-mini.jpg');
     margin: 0;
-    padding: 0;
+    /* Remove body padding since we'll wrap the main content */
 }
-
+/* Main content container to prevent overlap with fixed header */
+.main-content {
+    margin-top: 60px;  /* Adjust based on the header's actual height */
+    text-align: center;  /* Optional: center text if desired */
+}
 h1, h3, h4, h5, h6 {
     color: #BFD187ff;
 }
-
 h2 {
     color: rgb(29, 58, 78);
-} 
-
+}
 .button {
     color: #BFD187ff;
     background-color: #116706ff;
@@ -33,64 +31,40 @@ h2 {
     box-shadow: 0.2rem 0.3rem #202020;
     margin-top: 1.875rem;
 }
-
-/* questions*/
-#cover-text-1 {
-    /* Final rgba value sets the opacity to semi-transparent */
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(172, 204, 100, 0.7);
-    color: #ffffff;
-    padding: 1rem;
-    text-align: center;
-    border-radius: 20px;
-    max-width: 90%;  
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    
-}
-#cover-text-2 {
-    /* Final rgba value sets the opacity to semi-transparent */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(172, 204, 100, 0.7);
-    color: #ffffff;
-    padding: 1rem;
-    text-align: center;
-    border-radius: 20px;
-    max-width: 90%;  
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
+/* Questions section: cover texts */
+#cover-text-1,
+#cover-text-2,
 #cover-text-3 {
-    /* Final rgba value sets the opacity to semi-transparent */
     position: absolute;
-    top: 75%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     background-color: rgba(172, 204, 100, 0.7);
-    color: #ffffff;
+    color: #FFFFFF;
     padding: 1rem;
     text-align: center;
     border-radius: 20px;
-    max-width: 90%;  
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    max-width: 90%;
+    margin: 1rem 0;
 }
-  
-/*Header*/
+#cover-text-1 { top: 25%; }
+#cover-text-2 { top: 50%; }
+#cover-text-3 { top: 75%; }
+/* Header */
 header {
     background-color: #406A89ff;
-    padding: 0.1rem;
-    text-align: auto;
-}
+    padding: 1 1rem;
+    height: 60px;          /* Explicit header height */
+    line-height: 60px;     /* Vertically center header text */
+    text-align: left;
+    position: fixed;       /* Fix header at the top */
 
-/*Footer*/
+    top: 0;
+    margin-bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+/* Footer */
 footer {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #406A89ff;
@@ -99,4 +73,27 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+/* Media query: small phones (iPhone 5 and up) */
+@media screen and (max-width: 374px) {
+    header {
+        padding: 0 0.5rem;
+    }
+    #logo {
+        font-size: 1.8rem;
+    }
+    #cover-text-1,
+    #cover-text-2,
+    #cover-text-3 {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+    .stacked-form {
+        margin: 1rem;
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+    .info-banner img {
+        width: 100%;
+    }
 }
