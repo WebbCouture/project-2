@@ -89,7 +89,7 @@ footer {
     width: 100%;
 }
 /* Media query: small phones (iPhone 5 and up) */
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 320px) {
     header {
         padding: 0 0;
         text-align: auto;
